@@ -10,7 +10,7 @@
 - יש להיצמד ל-React, TypeScript, Vite, CSS רגיל, `useReducer`, Web Audio API, `localStorage`, `canvas-confetti`, `vite-plugin-pwa`/Workbox, Vitest ו-React Testing Library, בהתאם לתפקידיהם במסמך הארכיטקטורה.
 - בדיקות ידניות מתבצעות בדפדפן מובייל או באמולציית מובייל לפי ההתאמה; בדיקות התנהגות מערכת ההפעלה, אודיו ו-PWA מחייבות אימות במכשיר תומך ככל שניתן, ובדיקת HTTPS/Offline נעשית על Build פרוס. אין להציג בדיקה שלא בוצעה כאילו עברה.
 
-## Milestone 1 – בסיס אפליקציה ושני מסכים מעוצבים
+## Milestone 1 – בסיס אפליקציה ושני מסכים מעוצבים ✅
 
 **שם ומטרה:** הקמת פרויקט Frontend עובד ושני המסכים בעיצוב עקבי, כדי שניתן יהיה להציג ולבדוק את מבנה המוצר לפני חיבור לוגיקת המשחק.
 
@@ -101,7 +101,7 @@
 
 **מה יש לממש:**
 - יצירת אייקון האפליקציה לפי הגדרת ה-App Icon ב-`DESIGN.md` (קובץ SVG מקור + PNG בגדלים 192 ו-512, כולל Maskable ו-Favicon).
-- וידוא שה-Repository `Simon` של המשתמש ציבורי לפני הפריסה; אם לא – עצור והדרך את המשתמש לשנות זאת. `base: "/Simon/"` ב-Vite.
+- וידוא שה-Repository `Simon-Game` של המשתמש ציבורי לפני הפריסה; אם לא – עצור והדרך את המשתמש לשנות זאת. `base: "/Simon-Game/"` ב-Vite.
 - הגדרת `vite-plugin-pwa` עם Manifest בעברית, אייקוני התקנה ומשאבי Precache באמצעות Workbox `generateSW`, כולל הנכסים הנחוצים למסכים ולצלילים.
 - ניהול עדכוני Service Worker ללא Reload כפוי באמצע משחק פעיל; טיפול ב-Cache ובנתיב הבסיס של GitHub Pages בהתאם למבנה ה-Repository.
 - Workflow של GitHub Actions המבצע `npm ci`, typecheck, בדיקות, Build ו-Deployment אוטומטי של `dist/` אל GitHub Pages ב-HTTPS בעקבות שינוי בענף הפריסה; הגדרת Pages לשימוש ב-GitHub Actions.

@@ -1,0 +1,52 @@
+.simon-board {
+  /* LTR so the spatial color layout does not flip under RTL (ADR-1) */
+  direction: ltr;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  width: min(82vw, 40dvh, 360px);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 50%;
+  background: var(--charcoal);
+  border: 3px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.simon-pad {
+  width: 100%;
+  height: 100%;
+}
+
+.simon-pad--green {
+  border-top-left-radius: 100%;
+}
+
+.simon-pad--red {
+  border-top-right-radius: 100%;
+}
+
+.simon-pad--yellow {
+  border-bottom-left-radius: 100%;
+}
+
+.simon-pad--blue {
+  border-bottom-right-radius: 100%;
+}
+
+.simon-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--surface);
+  border: 6px solid var(--charcoal);
+  box-shadow: 0 0 0 2px var(--border);
+  pointer-events: none;
+}

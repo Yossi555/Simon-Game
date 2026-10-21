@@ -1,0 +1,36 @@
+.screen-header {
+  padding: var(--space-4) 0 var(--space-2);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.screen-title {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.round-indicator {
+  margin-top: var(--space-3);
+  text-align: center;
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+}
+
+.status-line {
+  min-height: 1.5em;
+  margin: var(--space-1) 0 var(--space-3);
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.action-area {
+  margin-top: var(--space-4);
+  padding-bottom: var(--space-2);
+}

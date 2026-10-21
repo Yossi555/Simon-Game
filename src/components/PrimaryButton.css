@@ -1,0 +1,26 @@
+.primary-button {
+  display: block;
+  width: 80%;
+  max-width: 320px;
+  min-height: 52px;
+  margin: 0 auto;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  background: var(--blue);
+  color: var(--white);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  box-shadow: 0 6px 18px rgba(0, 163, 255, 0.35);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.primary-button:active:not(:disabled) {
+  transform: scale(0.97);
+  box-shadow: 0 3px 10px rgba(0, 163, 255, 0.3);
+}
+
+.primary-button:disabled {
+  opacity: 0.45;
+  box-shadow: none;
+  cursor: default;
+}

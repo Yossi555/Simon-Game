@@ -1,0 +1,35 @@
+:root {
+  /* Colors (DESIGN.md §2.1) */
+  --green: #00d26a;
+  --red: #ff3b30;
+  --yellow: #ffd600;
+  --blue: #00a3ff;
+  --charcoal: #0f0f0f;
+  --soft-gray: #e5e5e5;
+  --white: #ffffff;
+  --bg: #0a1628;
+  --surface: #12213a;
+  --border: #1e3556;
+  --text-muted: #9fb0c8;
+
+  /* Spacing scale (DESIGN.md §2.4) */
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+
+  /* Typography (DESIGN.md §2.2) */
+  --font-family: 'Heebo', Arial, sans-serif;
+  --fs-h1: 32px;
+  --fs-h2: 24px;
+  --fs-h3: 20px;
+  --fs-body: 16px;
+  --fs-caption: 14px;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Radii */
+  --radius-card: 16px;
+  --radius-pill: 999px;
+}

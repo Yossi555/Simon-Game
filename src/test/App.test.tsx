@@ -6,7 +6,7 @@ import { COLORS } from '../game/colors';
 describe('App', () => {
   it('renders the home screen by default', () => {
     render(<App />);
-    expect(screen.getByRole('heading', { level: 1, name: 'סיימון' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1, name: 'דיסקו גו' })).toBeInTheDocument();
     expect(
       screen.getByText((_, el) => el?.tagName === 'P' && el.textContent === 'שלב 1 מתוך 10'),
     ).toBeInTheDocument();

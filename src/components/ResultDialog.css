@@ -1,0 +1,47 @@
+/* Covers the board area and keeps the board recognisable behind it */
+.result-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3);
+  background: rgba(10, 22, 40, 0.55);
+}
+
+.result-card {
+  width: 100%;
+  max-width: 340px;
+  padding: var(--space-4) var(--space-3);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  border: 1px solid var(--blue);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.result-title {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: 1.25;
+}
+
+.result-title--cheer {
+  display: block;
+  color: var(--green);
+}
+
+.result-title--lost {
+  color: var(--red);
+}
+
+.result-detail {
+  margin-top: var(--space-1);
+  font-size: var(--fs-body);
+  color: var(--soft-gray);
+}
+
+.result-card .primary-button {
+  margin-top: var(--space-4);
+}

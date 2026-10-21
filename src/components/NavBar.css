@@ -14,6 +14,33 @@
   font-size: var(--fs-body);
   font-weight: var(--fw-semibold);
   color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 0;
+  line-height: 1.2;
+}
+
+.navbar-icon {
+  display: flex;
+  width: 22px;
+  height: 22px;
+}
+
+.navbar-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.navbar-icon .navbar-icon-dot {
+  fill: currentColor;
 }
 
 .navbar-tab + .navbar-tab {

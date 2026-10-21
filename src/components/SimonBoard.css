@@ -19,6 +19,28 @@
 .simon-pad {
   width: 100%;
   height: 100%;
+  /* No scroll or zoom while pressing a pad */
+  touch-action: none;
+  transition: filter 80ms ease, box-shadow 80ms ease;
+}
+
+.simon-pad:disabled {
+  cursor: default;
+}
+
+/* Inactive pads while the sequence plays, while finished, etc. */
+.simon-board.is-dimmed .simon-pad:not(.is-lit) {
+  filter: brightness(0.45) saturate(0.7);
+}
+
+/* `color` holds the pad color, so the glow follows it */
+.simon-pad.is-lit {
+  filter: brightness(1.35);
+  box-shadow:
+    0 0 18px 4px currentColor,
+    inset 0 0 24px rgba(255, 255, 255, 0.45);
+  position: relative;
+  z-index: 1;
 }
 
 .simon-pad--green {
@@ -49,4 +71,5 @@
   border: 6px solid var(--charcoal);
   box-shadow: 0 0 0 2px var(--border);
   pointer-events: none;
+  z-index: 2;
 }

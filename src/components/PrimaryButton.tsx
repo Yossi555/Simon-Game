@@ -1,7 +1,7 @@
-import type { ButtonHTMLAttributes } from 'react';
+import type { ComponentPropsWithRef } from 'react';
 import './PrimaryButton.css';
 
-type Props = ButtonHTMLAttributes<HTMLButtonElement>;
+type Props = ComponentPropsWithRef<'button'>;
 
 export default function PrimaryButton({ className, type = 'button', ...rest }: Props) {
   return <button type={type} className={`primary-button ${className ?? ''}`.trim()} {...rest} />;
